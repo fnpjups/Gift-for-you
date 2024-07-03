@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Always and Forever</title>
+        <link rel="stylesheet"
+              href="style.css">
+    </head>
+    <body>
+        <div id="img1" class="fade-in">
+            <img src="Images/Cutie.JPG" alt="A pic of you and I from my ipad :>">
+        </div>
+        <div id="img2" class="fade-in">
+            <img src="Images/One of my favs fr.jpg" alt="Nother pic of us, one of my fav ones">
+        </div>
+        <header>
+            <H2 class="fade-in">Hello Baby :></H2>
+            <section id="caption" class="fade-in">
+                <p>
+                    I have some very important things to tell you!!
+                </p>
+            </section>
+            <div>
+                <div class="button fade-in">
+                    <a href="message4you.html">
+                        <button>Click me :D</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeIns = document.querySelectorAll('.fade-in');
+            fadeIns.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('visible');
+                }, index * 200); 
+            });
+        });
+    </script>
+</html>

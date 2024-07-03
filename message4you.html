@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I L Y</title>
+        <link rel="stylesheet"
+              href="style.css">
+    </head>
+    <body>
+        <header>
+            <h3 class="scroll-in">To My Love</h3>
+        </header>
+        <main>
+            <div id="message">
+                <p class="scroll-in">
+                    I just wanted to take a moment to tell you how amazing of a person you are :> 
+                    You are such an incredible person and I admire you more than words can say. 
+                    You are so genuine and passionate in everything you do may it be work or in
+                    expressing how you feel. The way you pour your heart into everything you do is 
+                    so inspring that it makes others want to do their best as well. You're a kind, 
+                    caring, and loving human being who makes me a better person just by being in my life.
+                </p>
+                <br><br><br>
+                <p class="scroll-in">
+                    Baby we do have individuality, you are waaaaaay more funnier than I can ever be. 
+                    Your sense of humor is so unique and it never fails to make me laugh even from when
+                    we were just friends. Whenever I think about times where I've laughed so hard, you 
+                    are always the reason hehe. You have a way of bringing joy and light into my life 
+                    and I cherish every single moment we spend together.
+                </p>
+                <br><br><br>
+                <p class="scroll-in">
+                    Being with you makes me feel so safe and comforted. Your presence is like a warm embrace 
+                    that I never want to leave your side. Even when you say you are complicated, I want you to 
+                    know that I am here to understand and love every part of you. Your complexities make you 
+                    who you are and I love you no matter what. 
+                </p>
+                <br><br><br>
+                <p class="scroll-in">
+                    I am always here for you through every high and low. You will never be alone because 
+                    I will never leave your side. You mean the world to me and I can't imagine my life 
+                    without you. I love you so much, now and always. Mwamwamwa.
+                </p>
+            </div>
+            <div class="scroll-in" id="flowers">
+                <a href="https://open.spotify.com/playlist/7rTNE5B0I5H0k8DxB132NF?si=69cd4a0a3af14283&pt=db2f6c976987fc9158df227edb573e44" target="_blank">
+                    <img src="Images/Flowers for you.png" alt="Flowers for you">
+                </a>
+            </div>
+        </main>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollIns = document.querySelectorAll('.scroll-in');
+        
+            const checkVisibility = () => {                 
+                scrollIns.forEach(element => {                       
+                    const rect = element.getBoundingClientRect();    
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {  
+                        element.classList.add('visible');              
+                    }
+                });
+            };
+        
+            checkVisibility();                                      
+            window.addEventListener('scroll', checkVisibility);    
+        });
+    </script>
+</html>
